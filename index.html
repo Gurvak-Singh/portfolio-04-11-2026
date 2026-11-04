@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href=" ./style.css">
+
+    <title>CV</title>
+  </head>
+  <body>
+
+    <header> <!-- Container tag -->
+      <h1>Gurvak Singh</h1>
+      <p class="tagline">Data, Backend, and trainings, I do a lot of that, if you do too, let's collaborate!</p>
+      <div class="header-buttons">
+        <a href="contact-me" class="btn btn-primary">Get In Touch</a>
+        <a href="#" class="btn btn-outline">View Experience</a>
+        
+      </div>
+    </header>
+
+    <main> <!-- Container tag -->
+      <nav> <!-- Contianer tag -->
+        <div class="container nav-inner">
+          <a href="#" class="logo"> Portfolio</a>
+
+          <ul>
+            <li><a href="">Education</a></li>
+            <li><a href="">Work Experience/Internships</a></li>
+            <li><a href="">Projects</a></li>
+            <!-- Mandatory Sections below -->
+            <li><a href="">Contact Me</a></li>
+            <li><a href="#admin-login" onClick="showAdminLogin()">Admin Login</a></li>
+          </ul>
+            <button id="toggle-theme"Toggle Theme></button>
+        </div>
+      </nav>
+
+      <section id="education" class="section-blocks"> <!-- Container tag -->
+        <div class="container">
+          
+          <div class="section-heading">
+            <h2 id="edu">Education</h2>
+          </div>
+          
+          <div class="section-list">
+
+            <div class="section-item"> <!-- Container tag -->
+              <h3>BCA</h3>
+              <p class="item-place">Manipal University Jaipur, Rajasthan, India</p>
+              <p class="item-year">2028</p>
+            </div> <!-- Class "section-list" is ending -->
+
+            <div class="section-item"> <!-- Container tag -->
+              <h3>Business Program</h3>
+              <p class="item-place">Cambrian College, ON, Canada</p>
+              <p class="item-year">2021</p>
+            </div> <!-- Class "section-list" is ending -->
+
+            <div class="section-item"> <!-- Container tag -->
+              <h3>Non-Medical with Mathematics</h3>
+              <p class="item-place">Police DAV Public School, Punjab, India</p>
+              <p class="item-year">2016</p>
+            </div> <!-- Class "section-list" is ending -->
+          
+          </div> <!-- Class "section-item" is ending -->
+          
+        </div> <!-- Class "container" is ending -->
+      
+      </section>
+
+      <section id="work-exp" class="section-blocks"> <!-- Container tag -->
+        <div class="container">
+          <div class="section-heading">
+            <h2>Work Experience</h2>
+          </div>
+
+          <div class="section-list">
+            
+            <div class="section-item"> <!-- Container tag -->
+              <h3>Head of Curriculum</h3>
+              <p class="item-place">Learning Zone</p>
+              <p class="item-year">2023</p>
+            </div>
+
+            <div class="section-item"> <!-- Container tag -->
+              <h3>Software Engineer</h3>
+              <p class="item-place">LALA Land</p>
+              <p class="item-year">2023</p>
+            </div>
+
+            <div class="section-item"> <!-- Contianer tag -->
+              <h3>Technical Trainer</h3>
+              <p class="item-place">Hong Kogn Pogo Channel</p>
+              <p class="item-year">2023</p>
+            </div>
+          
+          </div>
+        </div>
+      </section>
+        
+      <!-- Contact me, Adming login, and user responses section will be common for everyone! -->
+
+      <!-- Contact me -->
+      <section> <!-- Container tag -->
+        <h2>Contact Me</h2>
+        <!-- Form Validation -->
+        <form id="contact-form">
+          <div>
+            <label>Name:</label>
+            <input id="name_input" type="text" required>
+          </div>
+
+          <div>
+            <label>Email:</label>
+            <input id="email_input" type="email" placeholder="example@email.com" required>
+          </div>
+
+          <div>
+            <label>Message:</label>
+            <textared id="msg_input" required></textared>
+          </div>
+
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <!-- Adming Login -->
+      <section id="admin-login"> <!-- Container tag -->
+        <h2>Admin Login</h2>
+        <!-- Form Validation -->
+        <form id="admin-form">
+          <div>
+            <lablel>Username:</lablel>
+            <input type="text" id="input_username" required>
+          </div>
+
+          <div>
+            <label>Passwrod:</label>
+            <input type="password" id="input_password" required>
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section id="user-responses">
+        <h2>User Response</h2>
+        <div id="user-messages">
+          // each div will have 4 things
+        </div>
+      </section>
+      
+    </main>
+    <script src=" ./script.js"></script>
+  </body>
+</html>
